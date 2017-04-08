@@ -1,0 +1,10 @@
+    var parseStr = require("xml2js").parseString;
+
+    parseStr(postdata, function (err, result) {
+        if(err) {
+            //我们将XML数据通过xml2js模块(npm install xml2js)解析成json格式
+            console.log(err);
+            return;
+        }
+        console.log(result);
+    });
